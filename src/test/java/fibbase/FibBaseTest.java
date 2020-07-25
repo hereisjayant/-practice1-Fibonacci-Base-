@@ -31,4 +31,10 @@ public class FibBaseTest {
 		assertEquals(20, FibBase.ySum(1, 5));
 	}
 
+	@Test
+	public void test6(){
+		FibBase newob = new FibBase();
+		assertEquals(13,newob.getMaxFib(14));
+	}
+
 }

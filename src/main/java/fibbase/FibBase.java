@@ -34,11 +34,11 @@ public class FibBase {
 	 * @param a this is the input till whatever you want your fibonacci series
 	 * @return an integer
 	 */
-	private int getMaxFib(int a){
+	public int getMaxFib(int a){
 		if(a==1 || a==0) return a;
 		int i=1;
 		int j=1;
-		while (i<=a){
+		while (i<a && i+j<=a){
 			int k = j;
 			j=i;
 			i=k+j;
